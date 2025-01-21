@@ -1,1 +1,0 @@
-powershell.exe -ExecutionPolicy Bypass -File "E:\Steam Deck\Scripts\SetWindowsBrightness\SetBrightnessWithAdjustment.ps1" "+"
