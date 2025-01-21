@@ -1,6 +1,6 @@
 param(
     [Parameter(Mandatory = $true, Position = 0, 
-        HelpMessage = "Brightness value between 1.0 and 9.0 or '+'/'-' to adjust brightness")]
+        HelpMessage = "Brightness value between 1.0 and 9.0 or '+'/'minus' to adjust brightness")]
     [string]$brightnessOrAdjustment
 )
 
@@ -58,7 +58,7 @@ try {
         $brightness = [double]$brightnessOrAdjustment
     }
     else {
-        throw "Error: Invalid input. Use a number between 1.0 and 9.0, or '+' or '-' to adjust."
+        throw "Error: Invalid input. Use a number between 1.0 and 9.0, or '+' or 'minus' to adjust."
     }
 
 # Add C# code to interact with native Windows API for monitor brightness
